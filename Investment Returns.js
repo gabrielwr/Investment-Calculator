@@ -5,7 +5,7 @@ function investmentReturns(age, start, expReturn, amtAdded, yrsAdded, yrs, retYr
 	var age = age; 
 	for(let i= 0; i< yrs; i++)
 	{
-		age += 1; 
+		age++; 
 		investment += investment * expReturn;
 		if(i< yrsAdded)
 		{
