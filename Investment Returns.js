@@ -1,33 +1,65 @@
-function investmentReturns(age, start, expReturn, amtAdded, yrsAdded, yrs, retYr, retAmt)
-{
+function investmentReturns(age, start, expReturn, amtAdded, yrs, yrsAdded, retYr, retAmt) {
+	var returnArr = [];
 	var investment = start; 
-	var investmentStr = ''; 
-	var age = age; 
-	for(let i= 0; i< yrs; i++)
-	{
+	var investmentStr= ''; 
+	for(var i = 0; i < yrs; i++) {
 		age++; 
 		investment += investment * expReturn;
-		if(i< yrsAdded)
-		{
+		if(i< yrsAdded) {
 			investment+= amtAdded;
 			investment = Math.floor(investment);
 			investmentStr = investment.toLocaleString();	//this adds appropriate commas
-			console.log('age ' + (age) + ': ' + investmentStr + ' contributed here '); 
+			console.log('age ' + (age) + ': ' + 'Net Worth: ' + investmentStr + ' contributed here '); 
+			returnArr.push(
+				[{
+					age : age,
+					netWorth : investmentStr, 
+					saved : 'Yes'
+					
+				}]
+			);
 		}
-		else if(age < retYr)
-		{
+		else if(age < retYr) {
 			investment = Math.floor(investment);
 			investmentStr = investment.toLocaleString();	//adds appropriate commas
-			console.log('age ' + (age) + ': ' + investmentStr);
+			console.log('age ' + (age) + ': ' + 'Net Worth: ' + investmentStr);
+			returnArr.push(
+				[{
+					age : age,
+					netWorth : investmentStr, 
+					saved : 'No'
+					
+				}]
+			);
 		}
-		else
-		{
+		else {
 			investment -= retAmt;
 			investment= Math.floor(investment);
 			investmentStr = investment.toLocaleString();
-			console.log("age " + (age) + ': ' + investmentStr + ' retired');
+			console.log("age " + (age) + ': ' + 'Net Worth: ' + investmentStr + ' retired');
+			returnArr.push(
+				[{
+					age : age,
+					netWorth : investmentStr, 
+					saved : 'No'
+					
+				}]
+			);
 		}
 	}
+	//IF YOU WOULD LIKE TO SEE ARRAY OF OBJECTS, UNCOMMENT RETURN
+	//return returnArr;
 }
 
-investmentReturns(25, 0, .05, 40000, 20, 60, 62, 60000);
+//CHANGE HERE!
+var yourAge = 25, 
+	yourNetWorth = 0;
+	ROI = .04, //4 percent ROI
+	yourSavings = 30000,
+	yearsToRun = 60,
+	yearsSaved = 30,
+	yearRetired = 62,
+	amtForRetirement = 80000;
+	
+
+investmentReturns(yourAge, yourNetWorth, ROI, yourSavings, yearsToRun, yearsSaved, yearRetired, amtForRetirement);
