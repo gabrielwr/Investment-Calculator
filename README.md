@@ -2,7 +2,7 @@
 
 Overview:
 
-  While the front end of this calculator still needs work, feel free to pull up the javascript file in repl.it (https://repl.it/CmPu/1) and use the variable names to input the appropriate values.
+  While the front end of this calculator still needs work, feel free to pull up the javascript file in repl.it (https://repl.it/CmPu/6) and use the variable names to input the appropriate values.
   
   This calculator was conceived of after a rather intense chapter of learning about personal finance. During that time, I had a favorite retirement calculator that just disappeared from the internet one day! So I figured I would try to recreate it and even improve upon it (since it was probably made in the early 2000's...)
   
