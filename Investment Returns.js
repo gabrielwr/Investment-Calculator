@@ -15,7 +15,6 @@ function investmentReturns(age, start, expReturn, amtAdded, yrs, yrsAdded, retYr
 					age : age,
 					netWorth : investmentStr, 
 					saved : 'Yes'
-					
 				}]
 			);
 		}
@@ -28,7 +27,6 @@ function investmentReturns(age, start, expReturn, amtAdded, yrs, yrsAdded, retYr
 					age : age,
 					netWorth : investmentStr, 
 					saved : 'No'
-					
 				}]
 			);
 		}
@@ -42,7 +40,6 @@ function investmentReturns(age, start, expReturn, amtAdded, yrs, yrsAdded, retYr
 					age : age,
 					netWorth : investmentStr, 
 					saved : 'No'
-					
 				}]
 			);
 		}
