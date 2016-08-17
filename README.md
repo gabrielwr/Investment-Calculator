@@ -4,7 +4,7 @@ Overview:
 
   While the front end of this calculator still needs work, feel free to pull up the javascript file in repl.it (https://repl.it/CmPu/6) and use the variable names to input the appropriate values. To see the unfinished front end, click here: https://jsfiddle.net/d9oz354p/
   
-  This calculator was conceived of after a rather intense chapter of learning about personal finance. During that time, I had a favorite retirement calculator that just disappeared from the internet one day! So I figured I would try to recreate it and even improve upon it (since it was probably made in the early 2000's...)
+  This calculator was conceived of after a rather intense chapter of learning about personal finance. During that time, I had a favorite retirement calculator that just disappeared from the internet one day. So I figured I would try to recreate it and even improve upon it (since it was probably made in the early 2000's...)
   
   The basic premise of this calculator is to show the power of compounding interest over time. This calculator has been a great asset for me when I need a little help with remembering to save money ;).
 
